@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator - Made By Me</title>
+
+    <!-- Bootstrap CSS for responsive layout and styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link to your custom CSS file for styling the calculator -->
+    <link rel="stylesheet" href="/calculator.css" />
+  </head>
+
+  <body>
+    <!-- Main container to center the content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- <h1>Simple Calculator</h1> -->
+        </div>
+      </div>
+      <div class="box">
+        <!-- Heading for the calculator -->
+        <h1 id="calHead">Mathify</h1>
+
+        <!-- Display input field to show the expression or result -->
+        <input type="text" name="" id="result" />
+
+        <!-- First row of buttons (Clear, Delete, %, /) -->
+        <div class="row">
+          <div class="col-3">
+            <button class="btn-1" onclick="clearResult()">AC</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="DEl" onclick="deleteResult()">DEL</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="Mod" onclick="appendValue('%')">%</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="Div" onclick="appendValue('/')">/</button>
+          </div>
+        </div>
+
+        <!-- Second row of buttons (7, 8, 9, *) -->
+        <div class="row">
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(7)">7</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(8)">8</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(9)">9</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="Multi" onclick="appendValue('*')">
+              *
+            </button>
+          </div>
+        </div>
+
+        <!-- Third row of buttons (4, 5, 6, -) -->
+        <div class="row">
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(4)">4</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(5)">5</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(6)">6</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="Sub" onclick="appendValue('-')">-</button>
+          </div>
+        </div>
+
+        <!-- Fourth row of buttons (1, 2, 3, +) -->
+        <div class="row">
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(1)">1</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(2)">2</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(3)">3</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="Plus" onclick="appendValue('+')">
+              +
+            </button>
+          </div>
+        </div>
+
+        <!-- Fifth row of buttons (00, 0, ., =) -->
+        <div class="row">
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue('00')">00</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue(0)">0</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" onclick="appendValue('.')">.</button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="eql" onclick="calculate()">=</button>
+          </div>
+        </div>
+
+        <!-- Sixth row of buttons ((), ^) for parentheses and exponentiation -->
+        <div class="row">
+          <div class="col-3">
+            <button class="btn-1" id="Openbrac" onclick="appendValue('(' )">
+              (
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="Closebrac" onclick="appendValue(')')">
+              )
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn-1" id="Squ" onclick="appendValue('^')">^</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="f1">Made By Aniket <span>&hearts;</span></footer>
+
+    <!-- Link to the JavaScript file that contains the logic for the calculator -->
+    <script src="calCulator.js"></script>
+  </body>
+</html>

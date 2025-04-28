@@ -1,0 +1,165 @@
+/* @font-face rule to import the "Comic Relief" font from the given paths */
+@font-face {
+  font-family: "Comic Relief"; /* Name of the custom font */
+  src: url("path/to/comic-relief-font.woff2") format("woff2"),
+    /* Path to the .woff2 font file */ url("path/to/comic-relief-font.woff")
+      format("woff"); /* Path to the .woff font file */
+}
+
+/* .container styles to center its content horizontally and vertically using flexbox */
+.container {
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  display: flex; /* Use flexbox layout */
+  margin-top: 30px; /* Add a margin from the top */
+}
+
+/* .box styles for a container with a gradient background and rounded corners */
+.box {
+  height: 600px; /* Height of the box */
+  width: 470px; /* Width of the box */
+  margin: 5px auto; /* Margin at the top and bottom, centered horizontally */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  background-image: radial-gradient(
+    /* Radial gradient background */ circle 349px at 0.3% 48.6%,
+    /* Gradient shape and position */ rgba(0, 0, 0, 1) 0%,
+    /* Starting color (black) */ rgba(87, 124, 253, 0.89) 100.7%
+      /* Ending color (blue with transparency) */
+  );
+}
+
+/* .box h1 styles for the heading inside the .box container */
+.box h1 {
+  text-align: center; /* Center-align the text */
+  font-family: "Comic Relief", system-ui; /* Use "Comic Relief" font and fallback to system font */
+  font-weight: 700; /* Set font weight to bold */
+  font-style: normal; /* Normal font style */
+  margin-bottom: 20px; /* Margin below the heading */
+}
+
+/* #result styles for a result display box */
+#result {
+  font-size: 25px; /* Font size for the result text */
+  width: 350px; /* Width of the result box */
+  height: 50px; /* Height of the result box */
+  margin-bottom: 20px; /* Margin below the result box */
+  display: block; /* Display block-level element */
+  border: 2px solid black; /* Black border around the result box */
+  border-radius: 8px; /* Rounded corners */
+  padding: 5px 10px; /* Padding inside the box */
+  text-align: center; /* Center the text */
+  justify-content: center; /* Align content to the center horizontally */
+  align-items: center; /* Align content to the center vertically */
+  margin-left: 40px; /* Left margin */
+  margin-right: 40px; /* Right margin */
+}
+
+/* .btn-1 styles for the button */
+.btn-1 {
+  width: 80%; /* Button width (80% of the parent container) */
+  height: 60px; /* Button height */
+  font-size: 24px; /* Font size of the button text */
+  font-family: "Comic Relief", system-ui; /* Use "Comic Relief" font and fallback to system font */
+  font-weight: 700; /* Set font weight to bold */
+  border-radius: 22px; /* Rounded corners of the button */
+  border: none; /* No border for the button */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  background-color: #ffffff; /* White background color */
+  padding: 0px; /* No padding */
+}
+
+/* .row styles for padding around the elements inside it */
+.row {
+  padding: 4px; /* Padding around each row */
+}
+
+/* Body styles to set the background color of the page */
+body {
+  background-color: #a4e9f9; /* Light blue background color */
+}
+
+/* .btn-1 hover effect to change button styles on mouse hover */
+.btn-1:hover {
+  background-color: rgb(8, 8, 8); /* Change background color to black */
+  color: white; /* Change text color to white */
+  transform: scale(1); /* Maintain the original size */
+  transition: 0.3s; /* Smooth transition for the background color */
+}
+
+#DEl:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+#Mod {
+  color: white;
+  background-color: orange;
+}
+
+#Div {
+  color: white;
+  background-color: orange;
+}
+
+#Multi {
+  color: white;
+  background-color: orange;
+}
+
+#Sub {
+  color: white;
+  background-color: orange;
+}
+
+#Plus {
+  color: white;
+  background-color: orange;
+}
+
+#eql {
+  color: white;
+  background-color: rgb(29, 171, 29);
+}
+
+#Openbrac {
+  color: white;
+  background-color: orange;
+}
+
+#Closebrac {
+  color: white;
+  background-color: orange;
+}
+
+#Squ {
+  color: white;
+  background-color: orange;
+}
+
+/* #calHead hover effect to change text color on hover */
+#calHead:hover {
+  color: rgb(235, 236, 229); /* Change text color to light gray */
+  transform: scale(1); /* Maintain the original size */
+  transition: 0.4s; /* Smooth transition for the color change */
+}
+
+footer {
+  text-align: center;
+  font-family: "Comic Relief", system-ui;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.f1 span {
+  font-size: 23px; /* Default font size of the heart symbol */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for both color and scaling */
+}
+
+.f1:hover span {
+  color: red; /* Color change on hover */
+  transform: scale(1.5); /* Scaling the heart on hover */
+}
